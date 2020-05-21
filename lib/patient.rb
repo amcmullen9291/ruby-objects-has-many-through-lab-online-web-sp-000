@@ -28,10 +28,8 @@ class Patient
     name = Patient.new(name)
   end 
   
-  # def doctors
-  #   Doctor.all.select do |doctor|
-  #     doctor.patient == self 
-  #   end
-  # end 
-
+  def patients
+    appointments.map(&:patient)
+  end
+  
 end 
