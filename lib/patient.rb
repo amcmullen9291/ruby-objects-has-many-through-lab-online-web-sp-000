@@ -28,8 +28,8 @@ class Patient
     name = Patient.new(name)
   end 
   
-  def patients
-    appointments.map(&:patient)
+  def doctors
+    appointments.map(&:doctors)
   end
   
 end 
